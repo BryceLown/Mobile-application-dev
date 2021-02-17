@@ -11,16 +11,18 @@
 </head>
 <ion-app>
 <ion-content>
-    <ion-card>
+    <ion-card color="light">
 <ion-card-content>
-    <ion-card-title class="ion-text-center">Title</ion-card-title>
-    <ion-button id="btn1" color="medium">Insert image here</ion-button>
-    <ion-button id="btn2" color="medium">Insert image here</ion-button>
-    <ion-button id="btn3" color="medium" expand="block">Insert content here</ion-button>
+    <ion-card-title id="card" class="ion-text-center">Title</ion-card-title>
 </ion-card-content>
     </ion-card>
+    <ion-button id="btn1" size="large" color="medium">Insert image here</ion-button>
+    <ion-button id="btn2" size="large" color="medium">Insert image here</ion-button>
+    <ion-button id="btn3" size="large" color="medium" expand="block">Insert content here</ion-button>
     <ion-footer>
-        <ion-icon name="home"></ion-icon>
+        <ion-icon size="large" id="home" name="home"></ion-icon>
+        <ion-icon size="large" id="diary" name="book"></ion-icon>
+        <img id="calories" src="calories.png">
     </ion-footer>
     
 </ion-content>

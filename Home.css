@@ -1,13 +1,42 @@
 body {background-color: blue;}
 #btn1 {
     float: right;
+    top: 63px;
+    position: relative;
 }
 #btn2 {
-    bottom: px;
-    position: relative;
+    
 }
 
 #btn3 {
-    top: 25px;
+    top: 100px;
     position: relative;
+}
+
+#home {
+    top: 500px;
+    position: relative;
+    left: 120px;
+    
+}
+
+#diary {
+    top: 500px;
+    position: relative;
+    left: 135px;
+}
+
+#calories {
+    width: 35px;
+    top: 500px ;
+    position: relative;
+    left: 145px;
+}
+
+ion-content{
+    --ion-background-color:rgb(35, 35, 252);
+}
+
+#card {
+    --ion-color: white;
 }
