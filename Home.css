@@ -1,0 +1,13 @@
+body {background-color: blue;}
+#btn1 {
+    float: right;
+}
+#btn2 {
+    bottom: px;
+    position: relative;
+}
+
+#btn3 {
+    top: 25px;
+    position: relative;
+}
