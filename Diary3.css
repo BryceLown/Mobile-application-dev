@@ -1,33 +1,37 @@
 body {background-color: blue;}
 
+/*Edited button positions for list examples*/
 #btn1 {
-    top: 100px;
+    top: 330px;
     position: relative;
 }
     
 #btn2 {
-    top: 140px;
-    left: 270px;
+    bottom: 225px;
     position: relative;
 }
 
 #btn3 {
-    top: 70px;
-    left: 176px;
+    top: 80px;
     position: relative;
 }
 
 #btn4 {
-    bottom: 175px;
-    left: 85px;
+    bottom: 350px;
     position: relative;
 }
 
 #btn5 {
-    top: 100px;
+    top: 85px;
     position: relative;
 }
 
+#btn6 {
+    top: 20px;
+    position: relative;
+}
+
+/*Edited navigation icons positions and size*/
 #home {
     top: 500px;
     position: relative;
@@ -48,14 +52,17 @@ body {background-color: blue;}
     left: 145px;
 }
 
+/*Edited background to blue*/
 ion-content{
     --ion-background-color:rgb(35, 35, 252);
 }
 
+/*Edited card colour to white*/
 #card {
     --ion-color: white;
 }
 
+/*Edited meal text positions and changed font to bold*/
 #breakfast {
 font-weight: bold;
 top: 25px;
@@ -65,15 +72,22 @@ position: relative;
 
 #lunch {
     font-weight: bold;
-    top: 200px;
+    top: 235px;
     left: 10px;
     position: relative;
 }
 
-
+/*Edited arrow icon positions for lists examples*/
 #arrow {
-    top: 150px;
+    top: 140px;
     left: 350px;
     position: relative;
     z-index: 1000;
+}
+
+#arrow2 {
+   z-index: 1000;
+   top: 2px;
+   position: relative;
+   left: 350px;
 }

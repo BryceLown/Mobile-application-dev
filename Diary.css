@@ -1,5 +1,7 @@
 body {background-color: blue;}
 
+
+/*Placeholder buttons positioned under each meal section*/
 #btn1 {
     bottom: 148px;
     position: relative;
@@ -20,6 +22,7 @@ body {background-color: blue;}
     position: relative;
 }
 
+/*Navigation icons positioned and size corrected*/
 #home {
     top: 500px;
     position: relative;
@@ -40,14 +43,17 @@ body {background-color: blue;}
     left: 145px;
 }
 
+/*Background colour changed to blue*/
 ion-content{
     --ion-background-color:rgb(35, 35, 252);
 }
 
+/*Card colour edited to white*/
 #card {
     --ion-color: white;
 }
 
+/*Meal section text positioned and font changed to bold*/
 #breakfast {
 font-weight: bold;
 left: 10px;

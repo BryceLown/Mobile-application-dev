@@ -1,27 +1,37 @@
 body {background-color: blue;}
 
+/*Added placeholders for list examples*/
 #btn1 {
-    bottom: 10px;
+    top: 330px;
     position: relative;
 }
     
 #btn2 {
-    top: 140px;
-    left: 270px;
+    bottom: 225px;
     position: relative;
 }
 
 #btn3 {
-    top: 70px;
-    left: 176px;
+    top: 80px;
     position: relative;
 }
 
 #btn4 {
-    left: 85px;
+    bottom: 350px;
     position: relative;
 }
 
+#btn5 {
+    top: 85px;
+    position: relative;
+}
+
+#btn6 {
+    top: 20px;
+    position: relative;
+}
+
+/*Edited navigation icon positions and size*/
 #home {
     top: 500px;
     position: relative;
@@ -42,14 +52,17 @@ body {background-color: blue;}
     left: 145px;
 }
 
+/*Changed background colour to blue*/
 ion-content{
     --ion-background-color:rgb(35, 35, 252);
 }
 
+/*Edited card colour to white*/
 #card {
     --ion-color: white;
 }
 
+/*Edited meal section text positions and font to bold*/
 #breakfast {
 font-weight: bold;
 top: 25px;
@@ -59,26 +72,29 @@ position: relative;
 
 #lunch {
     font-weight: bold;
-    top: 50px;
-    left: 10px;
-    position: relative;
-}
-#dinner {
-    font-weight: bold;
-    top: 100px;
-    left: 10px;
-    position: relative;
-}
-#snack {
-    font-weight: bold;
-    top: 150px;
+    top: 235px;
     left: 10px;
     position: relative;
 }
 
+
+/*Edited arrow icon positions for list dropdown example*/
 #arrow {
-    top: 50px;
+    top: 140px;
     left: 350px;
     position: relative;
     z-index: 1000;
+}
+
+#arrow2 {
+   z-index: 1000;
+   bottom: 55px;
+   position: relative;
+   left: 350px;
+}
+
+/*Edited total calorie counter position*/
+#total {
+    top: 100px;
+    position: relative;
 }

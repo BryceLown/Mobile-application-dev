@@ -1,29 +1,32 @@
 body {background-color: blue;}
+
+/*Edited 1st placeholder image position*/
 #btn1 {
     float: right;
     top: 63px;
     position: relative;
 }
 
-
+/*Edited 3rd placeholder position. 2nd placeholder did not need positioning*/
 #btn3 {
     top: 100px;
     position: relative;
 }
 
+/*Edited home icon position*/
 #home {
     top: 500px;
     position: relative;
     left: 120px;
     
 }
-
+/*Edited diary icon position*/
 #diary {
     top: 500px;
     position: relative;
     left: 135px;
 }
-
+/*Edited calorie icon (knife and fork) position and size*/
 #calories {
     width: 35px;
     top: 500px ;
@@ -31,10 +34,12 @@ body {background-color: blue;}
     left: 145px;
 }
 
+/*Changed application's background colour to blue*/
 ion-content{
     --ion-background-color:rgb(35, 35, 252);
 }
 
+/*Edited card colour to white*/
 #card {
     --ion-color: white;
 }
