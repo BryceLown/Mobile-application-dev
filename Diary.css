@@ -1,0 +1,74 @@
+body {background-color: blue;}
+
+#btn1 {
+    bottom: 148px;
+    position: relative;
+}
+    
+#btn2 {
+    bottom: 112px;
+    position: relative;
+}
+
+#btn3 {
+    bottom: 75px;
+    position: relative;
+}
+
+#btn4 {
+    bottom: 40px;
+    position: relative;
+}
+
+#home {
+    top: 500px;
+    position: relative;
+    left: 120px;
+    
+}
+
+#diary {
+    top: 500px;
+    position: relative;
+    left: 135px;
+}
+
+#calories {
+    width: 35px;
+    top: 500px ;
+    position: relative;
+    left: 145px;
+}
+
+ion-content{
+    --ion-background-color:rgb(35, 35, 252);
+}
+
+#card {
+    --ion-color: white;
+}
+
+#breakfast {
+font-weight: bold;
+left: 10px;
+position: relative;
+}
+
+#lunch {
+    font-weight: bold;
+    top: 50px;
+    left: 10px;
+    position: relative;
+}
+#dinner {
+    font-weight: bold;
+    top: 100px;
+    left: 10px;
+    position: relative;
+}
+#snack {
+    font-weight: bold;
+    top: 150px;
+    left: 10px;
+    position: relative;
+}
