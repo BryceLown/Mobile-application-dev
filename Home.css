@@ -1,37 +1,22 @@
 body {background-color: blue;}
 
-/*Edited 1st placeholder image position*/
-#btn1 {
-    float: right;
-    top: 63px;
-    position: relative;
-}
-
-/*Edited 3rd placeholder position. 2nd placeholder did not need positioning*/
-#btn3 {
-    top: 100px;
-    position: relative;
-}
 
 /*Edited home icon position*/
 #home {
-    top: 500px;
     position: relative;
-    left: 120px;
+    left: 50px;
     
 }
 /*Edited diary icon position*/
 #diary {
-    top: 500px;
     position: relative;
     left: 135px;
 }
 /*Edited calorie icon (knife and fork) position and size*/
 #calories {
     width: 35px;
-    top: 500px ;
     position: relative;
-    left: 145px;
+    left: 225px;
 }
 
 /*Changed application's background colour to blue*/
@@ -43,3 +28,26 @@ ion-content{
 #card {
     --ion-color: white;
 }
+
+
+#Health {
+    width: 250px;
+    position: relative;
+    left: 25px;
+}
+
+#Veg {
+    width: 150px;
+    position: relative;
+    left: 160px;
+    bottom: 110px;
+} 
+
+#intro {
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
