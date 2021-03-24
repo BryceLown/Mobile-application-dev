@@ -11,24 +11,54 @@
 </head>
 
 <ion-app>
-<ion-content>
-    <!--A card has been added as a placeholder for the application's title-->
-    <ion-card color="light">
-<ion-card-content>
-    <ion-card-title id="card" class="ion-text-center">Title</ion-card-title>
-</ion-card-content>
-    </ion-card>
+    <ion-header>
+        <ion-toolbar color="dark">
+          <ion-title>NutritionIT</ion-title>
+        </ion-toolbar>
+      </ion-header>
+<ion-content fullscreen>
     
     <!--Next buttons were added as placeholders which will be subsituted with nutritional images and a video. This meets the graphical content requirement-->
-    <ion-button id="btn1" size="large" color="medium">Insert image here</ion-button>
-    <ion-button id="btn2" size="large" color="medium">Insert image here</ion-button>
-    <ion-button id="btn3" size="large" color="medium" expand="block">Insert content here</ion-button>
+    <ion-card color="tertiary">
+    <ion-card-content>
+    <ion-img id="Health" src="Health.jpg"></ion-img>
+    <ion-card-header>
+        <ion-card-title>This is NutritionIT</ion-card-title>
+        <ion-card-content id="text">Welcome to NutritionIT. Here is where you take control of your nutrition. By tracking your calories and your food throughout the day you become one step closer to meeting your fitness goal.</ion-card-content>
+    </ion-card-header>
+    </ion-card-content>
+    </ion-card>
+    <ion-card color="dark">
+        <ion-card-content>
+    <ion-card-subtitle>Here's how it works:</ion-card-subtitle>
+    <ion-text>
+        <ul>
+        <li>Enter a food you have eaten into the diary for your breakfast, lunch, dinner, or a snack</li>
+        <li>The diary will then add this to a list and display its calories</li>
+        <li>Return to the calorie screen to see what you have consumed throughout the day</li>
+        </ul>
+    </ion-text>
+    </ion-card-content>
+   </ion-card>
     <ion-footer>
+        <ion-card color="tertiary">
+            <ion-card-content>
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/d2evuFfO_nk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; pause; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </ion-card-content>
+        </ion-card>
 
         <!--Icons have been placed at the bottom of the application which will be used to navigate between the three screens-->
-        <ion-icon size="large" id="home" name="home"></ion-icon>
+        <a href="Home wireframe.html">
+       <ion-icon size="large" id="home" name="home"></ion-icon>
+        </a>
+        <a href="Diary.html">
         <ion-icon size="large" id="diary" name="book"></ion-icon>
-        <img id="calories" src="calories.png">
+        </a>
+        <a href="Calories.html">
+        <ion-icon id="calories" size="large" name="restaurant"></ion-icon>
+        </a>
+    
     </ion-footer>
     
 </ion-content>
