@@ -1,3 +1,5 @@
+body {background-color: blue;}
+
 ion-content{
     --ion-background-color:rgb(35, 35, 252);
 }
