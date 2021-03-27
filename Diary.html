@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="Diary.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calorie Counter</title>
+    <title> NutritionIT</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
 </head>
 
-<!--Added card for diary title and edited colour to white-->
-<ion-app>
-    <ion-header>
-        <ion-toolbar color="dark">
-          <ion-title>NutritionIT</ion-title>
-        </ion-toolbar>
-        <ion-toolbar>
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="dark">
+                <ion-title>NutritionIT</ion-title>
+            </ion-toolbar>
+            <ion-navbar color="primary">
+                <button ion-button icon-only menuToggle>
+                    <a href="Home wireframe.html">
+                  <ion-icon color="dark" size="large" name="home"></ion-icon>
+                  </a>
+                </button>
+                <ion-navbar>
+                    <button ion-button icon-only menuToggle>
+                        <a href="Diary.html">
+                      <ion-icon color="dark" size="large" name="book"></ion-icon>
+                      </a>
+                    </button>
+                <ion-navbar>
+                    <button ion-button icon-only menuToggle>
+                        <a href="Calories.html">
+                      <ion-icon color="dark" size="large" name="restaurant"></ion-icon>
+                      </a>
+                    </button>
+        </ion-header>
+
+        <ion-content>
             <ion-card color="tertiary">
                 <ion-card-content>
-                    <ion-card-subtitle id="title">Diary</ion-card-subtitle>
-                </ion-card-content>
-            </ion-card>
-            <ion-card color="tertiary">
-                <ion-card-content>
-                <ion-content-subtitle>Breakfast</ion-content-subtitle>
-                </ion-card-content>
+                <ion-card-subtitle>Search for a food</ion-card-subtitle>
                 <ion-searchbar color="light"></ion-searchbar>
-                <ion-card-content>
-                    <ion-content-subtitle>Lunch</ion-content-subtitle>
-                    </ion-card-content>
-                    <ion-searchbar color="light"></ion-searchbar>
+                <ion-button id="search" expand="block">Enter</ion-button>
+            </ion-toolbar>
+                </ion-card-content>
             </ion-card>
-      </ion-header>
-<ion-content fullscreen>
-    <a href="Home wireframe.html">
-        <ion-icon size="large" id="home" name="home"></ion-icon>
-         </a>
-         <a href="Diary.html">
-         <ion-icon size="large" id="diary" name="book"></ion-icon>
-         </a>
-         <a href="Calories.html">
-         <ion-icon id="calories" size="large" name="restaurant"></ion-icon>
-         </a>
-    
-    </ion-footer>
-    
-</ion-content>
-</ion-app>
+            <ion-list id="list-output"></ion-list>
+        </ion-content>
+        <div id="content"></div>
+        
+    </ion-app>
+    <script src="Diary.js"></script>
+</body>
 
 </html>

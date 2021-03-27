@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="Home.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calorie Counter</title>
+    <title>NutritionIT</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
 <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
@@ -15,6 +15,24 @@
         <ion-toolbar color="dark">
           <ion-title>NutritionIT</ion-title>
         </ion-toolbar>
+        <ion-navbar>
+            <button ion-button icon-only menuToggle>
+                <a href="Home wireframe.html">
+              <ion-icon color="dark" size="large" name="home"></ion-icon>
+              </a>
+            </button>
+            <ion-navbar>
+                <button ion-button icon-only menuToggle>
+                    <a href="Diary.html">
+                  <ion-icon color="dark" size="large" name="book"></ion-icon>
+                  </a>
+                </button>
+            <ion-navbar>
+                <button ion-button icon-only menuToggle>
+                    <a href="Calories.html">
+                  <ion-icon color="dark" size="large" name="restaurant"></ion-icon>
+                  </a>
+                </button>
       </ion-header>
 <ion-content fullscreen>
     
@@ -47,18 +65,6 @@
 
         </ion-card-content>
         </ion-card>
-
-        <!--Icons have been placed at the bottom of the application which will be used to navigate between the three screens-->
-        <a href="Home wireframe.html">
-       <ion-icon size="large" id="home" name="home"></ion-icon>
-        </a>
-        <a href="Diary.html">
-        <ion-icon size="large" id="diary" name="book"></ion-icon>
-        </a>
-        <a href="Calories.html">
-        <ion-icon id="calories" size="large" name="restaurant"></ion-icon>
-        </a>
-    
     </ion-footer>
     
 </ion-content>
