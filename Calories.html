@@ -4,42 +4,73 @@
     <link rel="stylesheet" href="Calories.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calorie Counter</title>
+    <title>NutritionIT</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
 </head>
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="dark">
+                <ion-title>NutritionIT</ion-title>
+            </ion-toolbar>
+            <ion-navbar>
+                <button ion-button icon-only menuToggle>
+                    <a href="Home wireframe.html">
+                  <ion-icon color="dark" size="large" name="home"></ion-icon>
+                  </a>
+                </button>
+                    <button ion-button icon-only menuToggle>
+                        <a href="Diary.html">
+                      <ion-icon color="dark" size="large" name="book"></ion-icon>
+                      </a>
+                    </button>
+                    <button ion-button icon-only menuToggle>
+                        <a href="Calories.html">
+                      <ion-icon color="dark" size="large" name="restaurant"></ion-icon>
+                      </a>
+                    </button>
+            </ion-navbar>
+        </ion-header>
+        <ion-content fullscreen>
+            <ion-card color="light">
+                <ion-card-header>
+                    <ion-title>Enter food </ion-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-item color="dark">
+                        <ion-label color="light" position="floating">Food</ion-label>
+                        <ion-input type="string" id="lbl-item-name"></ion-input>
+                    </ion-item>
+                    <ion-item color="dark">
+                        <ion-label color="light" position="floating">Calories</ion-label>
+                        <ion-input type="number" id="lbl-item-cost"></ion-input>
+                    </ion-item>
+                </ion-card-content>  
+            </ion-card>
 
-<!--Added card for calorie screen title and edited colour to white-->
-<ion-app>
-<ion-content>
-    <ion-card color="light">
-<ion-card-content>
-    <ion-card-title id="card" class="ion-text-center">Diary</ion-card-title>
-</ion-card-content>
-    </ion-card>
+            <ion-grid>
+                <ion-row color="light">
+                    <ion-col size="4"></ion-col>
+                    <ion-col size="4">
+                        <ion-button color="dark" id="btn-add">Add Item</ion-button>
+                    </ion-col>
+                    <ion-col size="4"></ion-col>
+                </ion-row>
+            </ion-grid>
 
-    <!--Added meal sections with list placeholder buttons. Also added total calorie counter. This section also displays the list of food the user has entered which meets the list requirement. It will also meet the local storage requirment by allowing the user to save their favourite food prefernces-->
-    <h2 id="breakfast">Breakfast</h2>
-    <h2 id="lunch">Lunch</h2>
-    <ion-icon id="arrow" name="caret-down-outline"></ion-icon>
-    <ion-button id="btn1" size="large" expand="block" color="medium">Add food</ion-button>
-    <ion-button id="btn6" size="large" expand="block" color="medium">Add food</ion-button>
-    <ion-button id="btn3" size="large" expand="block" color="medium">Chicken breast 100 kcal</ion-button>
-    <ion-button id="btn5" size="large" expand="block" color="medium">Lettuce 30 kcal</ion-button>
-    <ion-button id="btn2" size="large" expand="block" color="medium">60g Cereal 200 kcal</ion-button>
-    <ion-button id="btn4" size="large" expand="block" color="medium">Bread slice 100 kcal</ion-button>
-    <ion-button id="total" size="large" expand="block" color="medium">Total calories: 430 kcal</ion-button>
-    <ion-icon id="arrow2" name="caret-down-outline"></ion-icon>
-    <ion-footer>
+            <ion-list id="list-output"></ion-list>
+            <ion-card>
+                <ion-card-content>
+                    <ion-item color="light">
+                        <ion-label  id="lbl-total">TOTAL: </ion-label>
+                    </ion-item>
+                </ion-card-content>
+            </ion-card>
+        </ion-content>
+        <script src="Calories.js"></script>
+    </ion-app>
 
-        <!--Added navigation icons-->
-        <ion-icon size="large" id="home" name="home"></ion-icon>
-        <ion-icon size="large" id="diary" name="book"></ion-icon>
-        <img id="calories" src="calories.png">
-    </ion-footer>
-    
-</ion-content>
-</ion-app>
-
+</body>
 </html>
