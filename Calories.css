@@ -1,5 +1,10 @@
 body {background-color: blue;}
 
+/*Edited application background colour*/
 ion-content{
     --ion-background-color:rgb(35, 35, 252);
+}
+/*Alligned card text to centre*/
+#subtitle {
+    text-align: center;
 }

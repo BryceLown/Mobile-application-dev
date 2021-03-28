@@ -1,5 +1,6 @@
 body {background-color: blue;}
 
+/*Changed application background colour to*/
 ion-content{
     --ion-background-color:rgb(35, 35, 252);
 }

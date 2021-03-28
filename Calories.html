@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--This page features a list where the user can calculate the calories they have eaten so far-->
+    <!--Linked stylesheet to calorie page-->
     <link rel="stylesheet" href="Calories.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Changed title-->
     <title>NutritionIT</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
@@ -12,12 +15,14 @@
 <body>
     <ion-app>
         <ion-header>
+            <!--Changed header title and colour of it to black-->
             <ion-toolbar color="dark">
                 <ion-title>NutritionIT</ion-title>
             </ion-toolbar>
+            <!--Implemented navbar for navigation to each page-->
             <ion-navbar>
                 <button ion-button icon-only menuToggle>
-                    <a href="Home wireframe.html">
+                    <a href="Home.html">
                   <ion-icon color="dark" size="large" name="home"></ion-icon>
                   </a>
                 </button>
@@ -34,9 +39,11 @@
             </ion-navbar>
         </ion-header>
         <ion-content fullscreen>
+            <!--Added card so that the user may enter a food and its calories-->
+            <!--Changed card colour to white-->
             <ion-card color="light">
                 <ion-card-header>
-                    <ion-title>Enter food </ion-title>
+                    <ion-card-subtitle id="subtitle">Enter food </ion-card-subtitle>
                 </ion-card-header>
                 <ion-card-content>
                     <ion-item color="dark">
@@ -49,7 +56,7 @@
                     </ion-item>
                 </ion-card-content>  
             </ion-card>
-
+<!--Added button and grid to be able to call the function to calculate total calories-->
             <ion-grid>
                 <ion-row color="light">
                     <ion-col size="4"></ion-col>
@@ -69,6 +76,7 @@
                 </ion-card-content>
             </ion-card>
         </ion-content>
+        <!--Linked calorie javascript to calorie screen-->
         <script src="Calories.js"></script>
     </ion-app>
 

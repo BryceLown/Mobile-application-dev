@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Linked stylesheet to home page-->
     <link rel="stylesheet" href="Home.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,14 @@
 
 <ion-app>
     <ion-header>
+        <!--Added in header title and changed color to black-->
         <ion-toolbar color="dark">
           <ion-title>NutritionIT</ion-title>
         </ion-toolbar>
+        <!--Added in navbar for navigation to each page-->
         <ion-navbar color="primary">
             <button ion-button icon-only menuToggle>
-                <a href="Home wireframe.html">
+                <a href="Home.html">
               <ion-icon color="dark" size="large" name="home"></ion-icon>
               </a>
             </button>
@@ -35,7 +38,7 @@
       </ion-header>
 <ion-content fullscreen>
     
-    <!--Next buttons were added as placeholders which will be subsituted with nutritional images and a video. This meets the graphical content requirement-->
+    <!--Added in healthy food image into a card with a title and introduction to the application. This meets the graphical content requirement.-->
     <ion-card color="tertiary">
     <ion-card-content>
     <ion-img id="Health" src="Health.jpg"></ion-img>
@@ -58,6 +61,7 @@
     </ion-card-content>
    </ion-card>
     <ion-footer>
+        <!--Implemented youtube video with helpful advice on health and calorie deficit-->
         <ion-card color="tertiary">
             <ion-card-content>
                 <iframe width="300" height="315" src="https://www.youtube.com/embed/d2evuFfO_nk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; pause; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
