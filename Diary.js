@@ -1,6 +1,6 @@
 let searchButton = document.querySelector("#search")
 
-//Add an event listener to the button that runs tje function sendAPIrequest when it is clicked
+//Add an event listener to the button that runs the function sendAPIrequest when it is clicked
 searchButton.addEventListener("click", ()=>{ 
 console.log("button pressed")
 sendApiRequest ()
@@ -16,6 +16,7 @@ async function sendApiRequest(){
     console.log(data)
     useApiData(data)
 
+    //This is the function that pulls information from the API//
     function useApiData(Data) {
     document.querySelector("#content").innerHTML = `
     <ion-card color="tertiary">
