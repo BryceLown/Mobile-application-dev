@@ -1,4 +1,4 @@
-/*This code has been reused from the lists lecture and has been modified to fit the application*/
+/*This code has been inspired from the lists lecture and has been modified to fit the application*/
 const itemName = document.querySelector('#lbl-item-name');
 const itemCost = document.querySelector('#lbl-item-cost');
 const addItemBtn = document.querySelector('#btn-add');
